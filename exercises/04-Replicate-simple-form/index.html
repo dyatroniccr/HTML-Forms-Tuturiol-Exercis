@@ -4,9 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>Replicate-simple-form</title>
-        <style>
-            #
-        </style>
+		<style></style>
 	</head>
 
 	<body>
@@ -22,7 +20,7 @@
 				<tbody>
 					<tr>
 						<th scope="row">Name</th>
-						<td><input type="text" /></td>
+						<td><input name="Name" type="text" value="" /></td>
 					</tr>
 					<tr>
 						<th scope="row">Sex</th>
@@ -37,8 +35,8 @@
 							<select name="color" />
 							<option value="light-blue">Light-Blue</option>
 							<option value="yellow">Yellow</option>
-                            <option value="brown">Brown</option>
-                            <option value="black">Black</option>
+							<option value="brown">Brown</option>
+							<option value="black">Black</option>
 							<select />
 						</td>
 					</tr>
@@ -50,8 +48,10 @@
 						</td>
 					</tr>
 					<tr>
-						<th scope="row">Describe your athletic ability:</th>
-						<td>Dooley</td>
+						<td scope="row" style="height: 100px">
+							Describe your athletic ability: <br />
+							<textarea id="describe" name="describe"></textarea>
+						</td>
 					</tr>
 					<tr id="contButton">
 						<td colspan="2"><button>Enter my information</button></td>
