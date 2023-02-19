@@ -3,14 +3,21 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="style.css" />
 		<title>Replicate-simple-form</title>
 		<style>
 			td {
 				display: table-cell;
 				vertical-align: inherit;
 			}
-			#id {
+			#title {
 				background-color: lightblue;
+			}
+			#describe,
+			#textAr {
+				height: 100px;
+				width: 100%;
+				border-style: inset;
 			}
 		</style>
 	</head>
@@ -18,7 +25,7 @@
 	<body>
 		<form>
 			<!-- your code here -->
-			<table border>
+			<table border class="center">
 				<thead>
 					<tr id="title">
 						<th scope="col">Name</th>
@@ -27,18 +34,18 @@
 				</thead>
 				<tbody>
 					<tr>
-						<th scope="row">Name</th>
+						<td scope="row">Name</td>
 						<td><input name="Name" type="text" value="" /></td>
 					</tr>
 					<tr>
-						<th scope="row">Sex</th>
+						<td scope="row">Sex</td>
 						<td>
 							<input type="radio" /> Male <br />
 							<input type="radio" /> Female
 						</td>
 					</tr>
 					<tr>
-						<th scope="row">Eye color</th>
+						<td scope="row">Eye color</td>
 						<td>
 							<select name="color" />
 							<option value="light-blue">Light-Blue</option>
@@ -49,20 +56,20 @@
 						</td>
 					</tr>
 					<tr>
-						<th scope="row">Check all that apply</th>
+						<td scope="row">Check all that apply</td>
 						<td>
 							<input type="checkbox" name="body" class="box" />Over 6 feet tall<br />
 							<input type="checkbox" name="body" class="box" />Over 200 pounds
 						</td>
 					</tr>
-					<tr>
-						<td scope="row" style="height: 100px">
+					<fieldset id="textAr">
+						<td scope="row">
 							Describe your athletic ability: <br />
 							<textarea id="describe" name="describe"></textarea>
 						</td>
-					</tr>
-					<tr id="contButton">
-						<td colspan="2"><button>Enter my information</button></td>
+					</fieldset>
+					<tr>
+						<td id="contButton" colspan="2" class="center"><button>Enter my information</button></td>
 					</tr>
 				</tbody>
 			</table>
