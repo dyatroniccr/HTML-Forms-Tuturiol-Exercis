@@ -1,0 +1,23 @@
+body {
+	background-color: white;
+}
+
+#title {
+	background-color: lightblue;
+	font-weight: bold;
+}
+#border-style {
+	border-style: inset hidden;
+}
+.pasosform {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	width: 400px;
+	margin: 50px auto;
+	/*position: relative;*/
+}
+#contButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

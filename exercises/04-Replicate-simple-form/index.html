@@ -5,27 +5,12 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="stylesheet" href="style.css" />
 		<title>Replicate-simple-form</title>
-		<style>
-			td {
-				display: table-cell;
-				vertical-align: inherit;
-			}
-			#title {
-				background-color: lightblue;
-			}
-			#describe,
-			#textAr {
-				height: 100px;
-				width: 100%;
-				border-style: inset;
-			}
-		</style>
 	</head>
 
 	<body>
 		<form>
 			<!-- your code here -->
-			<table border class="center">
+			<table class="pasosform" border>
 				<thead>
 					<tr id="title">
 						<th scope="col">Name</th>
@@ -35,7 +20,7 @@
 				<tbody>
 					<tr>
 						<td scope="row">Name</td>
-						<td><input name="Name" type="text" value="" /></td>
+						<td><input id="border-style" name="Name" type="text" value="" /></td>
 					</tr>
 					<tr>
 						<td scope="row">Sex</td>
@@ -47,7 +32,7 @@
 					<tr>
 						<td scope="row">Eye color</td>
 						<td>
-							<select name="color" />
+							<select id="border-style" name="color" />
 							<option value="light-blue">Light-Blue</option>
 							<option value="yellow">Yellow</option>
 							<option value="brown">Brown</option>
@@ -62,14 +47,14 @@
 							<input type="checkbox" name="body" class="box" />Over 200 pounds
 						</td>
 					</tr>
-					<fieldset id="textAr">
+					<tr id="textAr">
 						<td scope="row">
 							Describe your athletic ability: <br />
-							<textarea id="describe" name="describe"></textarea>
+							<textarea id="border-style" name="describe"></textarea>
 						</td>
-					</fieldset>
+					</tr>
 					<tr>
-						<td id="contButton" colspan="2" class="center"><button>Enter my information</button></td>
+						<td id="contButton" scope="row" class="btn"><button>Enter my information</button></td>
 					</tr>
 				</tbody>
 			</table>
